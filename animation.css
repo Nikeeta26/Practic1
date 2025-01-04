@@ -1,0 +1,162 @@
+.Flex{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.box {
+    height: 300px;
+    width: 400px;
+    background-color: rgb(241, 23, 129);
+    /* animation-name:fontanimation ;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: 3;
+    animation-direction: normal; */
+
+
+    /* animation-name: coloranimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: 5;
+    animation-direction: normal; */
+
+    /* animation-name: widthanimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 5;
+    animation-direction: normal; */
+
+    animation:widthanimation 2s ease-in 0s 5 normal ;
+}
+.box1{
+    height: 300px;
+    width: 400px;
+    background-color: rgb(23, 23, 241);
+    animation:animationproperties 2s ease-in 0s 5 normal ;
+}
+
+.box2{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    align-self: center;
+    background-color: rgb(241, 23, 129);
+    animation:animationproperty 2s ease-in 0s 5 normal ;
+}
+
+.loader{
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+@keyframes fontanimation{
+    from {
+        font-size:20px;
+    }
+   to{
+    font-size :50px;
+}
+}
+
+@keyframes coloranimation {
+    from{
+        background-color: rgb(241, 23, 129);
+    }
+    
+    to{
+       background-color: red;
+
+    }
+}
+@keyframes widthanimation {
+        
+    from{
+        width: 20px;
+        background-color: rgb(241, 23, 129);
+        font-size:20px;
+    }
+    to{
+        width: 300px;
+        background-color: red;
+        font-size :50px;
+       
+
+    }
+}
+
+@keyframes animationproperties {
+        
+    0%{
+       
+        background-color: rgb(241, 23, 129);
+        font-size:20px;
+        transform: rotate(360deg);
+    }
+    50%{
+       
+        background-color: red;
+        font-size :50px;
+    
+    }
+
+    100%{
+       
+        background-color: rgb(227, 227, 12);
+        font-size :50px;
+       
+
+    }
+}
+
+
+@keyframes animationproperty {
+        
+    0%{
+        width: 20px;
+        background-color: rgb(241, 23, 129);
+        font-size:20px;
+    }
+    50%{
+        width: 300px;
+        background-color: red;
+        font-size :50px;
+        border-radius: 70%;
+
+    }
+
+    100%{
+        width: 300px;
+        background-color: rgb(227, 227, 12);
+        font-size :50px;
+        border-radius: 50%;
+
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);
+        margin-left: 0%; }
+    100% { transform: rotate(360deg); 
+    margin-left: 60%;
+    }
+  }
+
+
+  @keyframes spin2 {
+    0% { 
+        transform: rotate(0deg) translate(2);
+        transition:  2s linear 0.2s; 
+     }
+    100% { 
+        transform: rotate(360deg) translate(2);
+        transition:  2s linear 0.2s; 
+     }
+  }
